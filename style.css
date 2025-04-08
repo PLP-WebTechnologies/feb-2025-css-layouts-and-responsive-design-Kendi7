@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;  /
+    align-items: center;     /* Center horizontally */
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    gap: 30rem;
+    
+    
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: brown;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and mobile view */
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        width: 100%;
+    }
+    .menu {
+        display: none;
+       
+    }
+
+    /* Hide menu links by default on small screens */
+    .menu a {
+        display: none;
+        
+    }
+    
+}
+
+
+
+
+/* Desktop View */
+@media (min-width: 769px) {
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menu a {
+        display: flex;
+        padding: 10px;
+        color: white;
+        background-color: #333;
+    }
+}
+
+
+    
+
